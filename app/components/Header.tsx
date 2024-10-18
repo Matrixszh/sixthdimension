@@ -59,7 +59,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow-md">
       <div className="mx-auto flex items-center justify-between py-4 px-5 lg:px-12">
-        <p className="text-[18px] font-semibold font-Jost uppercase tracking-[1.00px] text-[#027223] lg:hidden whitespace-nowrap">
+        <p className="text-[18px] font-bold font-Jost uppercase tracking-[1.00px] text-[#264845] lg:hidden whitespace-nowrap">
           Sixth <span className="text-red-500 font-Jost">Dimension</span> Studio
         </p>
         {/* Hamburger menu for mobile */}
@@ -67,7 +67,7 @@ const Header = () => {
           {isMenuOpen ? (
             <X size={24} className="text-red-500" />
           ) : (
-            <Menu size={24} className="text-[#027223]" />
+            <Menu size={24} className="text-[#264845]" />
           )}
         </button>
 
@@ -80,8 +80,8 @@ const Header = () => {
                 href={item.href}
                 className={`px-4 py-2 text-[13px] font-medium whitespace-nowrap uppercase tracking-[1.00px] rounded-[16px] transition-colors duration-200 ${
                   activeItem === item.title
-                    ? "bg-[#027223] text-white"
-                    : "text-black hover:bg-[#027223]/15"
+                    ? "bg-[#264845] text-white"
+                    : "text-black hover:bg-[#264845]/15"
                 }`}
                 onClick={() => handleItemClick(item.title)}
               >
@@ -90,7 +90,7 @@ const Header = () => {
             ))}
           </div>
 
-          <p className="text-[18px] font-semibold uppercase tracking-[1.00px] text-[#027223] mx-[46px] whitespace-nowrap">
+          <p className="text-[18px] font-semibold uppercase tracking-[1.00px] text-[#41544e] mx-[46px] whitespace-nowrap">
             Sixth <span className="text-red-500">Dimension</span> Studio
           </p>
 
@@ -101,8 +101,8 @@ const Header = () => {
                 href={item.href}
                 className={`px-4 py-2 text-[13px] font-medium whitespace-nowrap uppercase tracking-[1.00px] rounded-[16px] transition-colors duration-200 ${
                   activeItem === item.title
-                    ? "bg-[#027223] text-white"
-                    : "text-black hover:bg-[#027223]/15"
+                    ? "bg-[#264845] text-white"
+                    : "text-black hover:bg-[#264845]/15"
                 }`}
                 onClick={() => handleItemClick(item.title)}
               >

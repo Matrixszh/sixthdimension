@@ -60,7 +60,7 @@ const About = () => {
                   delay: (index + firstLineWords.length) * 0.2 + 0.2,
                   duration: 0.3,
                 }}
-                className="inline-block mx-1 text-[#027223]"
+                className="inline-block mx-1 text-[#264845]"
               >
                 {word}
               </motion.span>

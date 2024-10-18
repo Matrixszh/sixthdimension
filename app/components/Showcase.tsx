@@ -112,7 +112,7 @@ const Showcase: React.FC = () => {
         {/* Showcase Heading with Framer Motion Animation */}
         <motion.h1
           ref={headingRef} // Attach the ref to track when it comes into view
-          className="text-3xl text-[#027223] text-center sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
+          className="text-3xl text-[#264845] text-center sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
           initial={{ y: -100, opacity: 0 }} // Start off-screen (below) and invisible
           animate={isInView ? { y: 0, opacity: 1 } : {}} // Animate when heading comes into view
           transition={{ duration: 0.8, ease: "easeOut" }} // Duration of 0.8 seconds

@@ -69,7 +69,7 @@ const Contact = () => {
     <section id="Contact" className="text-center py-16 px-5 sm:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-          Get In <span className="text-[#027223]">Touch</span>
+          Get In <span className="text-[#264845]">Touch</span>
         </h1>
         <div className="flex items-center justify-center my-4">
           <div className="text-black/50 text-3xl font-normal font-Jost leading-[42px]">
@@ -102,7 +102,7 @@ const Contact = () => {
         <input
           type="text"
           placeholder="Name"
-          className="w-full bg-[#027223]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#027223]"
+          className="w-full bg-[#264845]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#264845]"
           {...register("name", { required: "Name is required" })}
         />
         {errors.name && (
@@ -112,7 +112,7 @@ const Contact = () => {
         <input
           type="email"
           placeholder="Email"
-          className="w-full bg-[#027223]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#027223]"
+          className="w-full bg-[#264845]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#264845]"
           {...register("email", {
             required: "Email is required",
             pattern: {
@@ -128,7 +128,7 @@ const Contact = () => {
         <input
           type="tel"
           placeholder="Phone Number"
-          className="w-full bg-[#027223]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#027223]"
+          className="w-full bg-[#264845]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#264845]"
           {...register("number", {
             required: "Phone number is required",
             minLength: {
@@ -143,7 +143,7 @@ const Contact = () => {
 
         <textarea
           placeholder="Message"
-          className="w-full bg-[#027223]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#027223]"
+          className="w-full bg-[#264845]/15 text-black placeholder-black py-3 px-4 rounded-[10px] mb-4 focus:outline-none focus:ring-2 focus:ring-[#027223]"
           {...register("message", {
             required: "Message is required",
             minLength: {
@@ -159,7 +159,7 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="w-full font-Jakarta bg-[#027223] text-white rounded-lg font-semibold py-3 px-4 focus:scale-105 hover:scale-105 transition cursor-pointer"
+          className="w-full font-Jakarta bg-[#264845] text-white rounded-lg font-semibold py-3 px-4 focus:scale-105 hover:scale-105 transition cursor-pointer"
           disabled={loading}
         >
           {loading ? (

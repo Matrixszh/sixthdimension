@@ -36,7 +36,7 @@ const ServicesSection = () => {
                 initial={{ y: -100, opacity: 0 }}
                 animate={headingInView ? { y: 0, opacity: 1 } : {}}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
-                className="inline-block mx-1 text-[#027223]"
+                className="inline-block mx-1 text-[#264845]"
               >
                 {word}
               </motion.span>
@@ -80,7 +80,7 @@ const ServicesSection = () => {
           <span className="relative font-Jost z-10">
             Contact Us <span aria-hidden="true" className='ml-2'>→</span>
           </span>
-          <span className="absolute inset-0 bg-[#027223] transition-transform duration-500 ease-out transform -translate-x-full group-hover:translate-x-0" />
+          <span className="absolute inset-0 bg-[#264845] transition-transform duration-500 ease-out transform -translate-x-full group-hover:translate-x-0" />
         </a>
 
         {/* Service images and descriptions */}
@@ -105,7 +105,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="bg-white w-full md:w-1/2 flex items-center">
-            <div className="w-full bg-[#027223]/15 p-6 sm:p-8 flex flex-col justify-center">
+            <div className="w-full bg-[#264845]/15 p-6 sm:p-8 flex flex-col justify-center">
               <ul>
                 {services.map((service) => (
                   <li key={service.name} className="mb-6 last:mb-0">
@@ -115,12 +115,12 @@ const ServicesSection = () => {
                     >
                       <span
                         className={`text-lg font-Jost sm:text-xl lg:text-2xl font-semibold relative ${
-                          activeService === service.name ? 'text-[#027223]' : 'text-[#027223] '
+                          activeService === service.name ? 'text-[#264845]' : 'text-[#264845] '
                         }`}
                       >
                         {service.name}
                         <span
-                          className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#027223] transform origin-left transition-transform duration-300 ${
+                          className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#264845] transform origin-left transition-transform duration-300 ${
                             activeService === service.name ? 'scale-x-100' : 'scale-x-0'
                           }`}
                         ></span>
