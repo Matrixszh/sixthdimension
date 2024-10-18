@@ -58,7 +58,7 @@ const Footer = () => {
               <a href="https://pin.it/oHxgl6946" target="_blank" rel="noopener noreferrer" className="hover:text-black text-red-500 transition-colors duration-300">
                 <FaPinterest size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-black text-[#264845] transition-colors duration-300">
+              <a href="https://www.instagram.com/sixthdimensionstudio?igsh=MWd2MGE0cHo5ajIydw==" target="_blank" rel="noopener noreferrer" className="hover:text-black text-[#264845] transition-colors duration-300">
                 <Instagram size={20} />
               </a>
               <a href="https://www.behance.net/sixthdimensionstudio" target="_blank" rel="noopener noreferrer" className="hover:text-black text-red-500 transition-colors duration-300">
