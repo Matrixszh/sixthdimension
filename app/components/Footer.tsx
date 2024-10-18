@@ -25,8 +25,8 @@ const Footer = () => {
               </div>
               <div className="mt-5 flex flex-col gap-1 text-black text-opacity-75 max-sm:text-[15px]">
                 <p className="text-center font-Jost ">
-                  Hi-Tech City,
-                  <br className="sm:hidden lg:block" /> Hyderabad
+                  White Fields,
+                  <br className="sm:hidden lg:block" /> Kondapur
                 </p>
               </div>
             </div>

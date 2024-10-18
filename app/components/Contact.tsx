@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
 import Confetti from "react-confetti";
@@ -17,10 +17,12 @@ interface FormData {
 }
 
 const Contact = () => {
+  // Fetch environment variables for emailjs
   const template: string | undefined = process.env.NEXT_PUBLIC_TEMPLATE_ID;
   const service: string | undefined = process.env.NEXT_PUBLIC_SERVICE_ID;
-  const key: string | undefined = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+  const key: string | undefined = process.env.NEXT_PUBLIC_USER_ID;
 
+  // Initialize form handling
   const {
     register,
     handleSubmit,
@@ -42,6 +44,7 @@ const Contact = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  // Handle form submission
   const onSubmit: SubmitHandler<FormData> = (data) => {
     if (service && template && key) {
       setLoading(true);
@@ -54,6 +57,7 @@ const Contact = () => {
           setTimeout(() => {
             setShowConfetti(false);
           }, 3000);
+          toast.success("Form Submitted Successfully!");
         })
         .catch((error) => {
           setLoading(false);
@@ -89,12 +93,11 @@ const Contact = () => {
         </div>
 
         <p className="font-Jost text-gray-600 text-sm sm:text-lg md:text-xl mt-12 mb-10 mx-auto max-w-3xl">
-        We&apos;d love to hear from you! Reach out to discuss your design needs or any questions you may have.
+          We&apos;d love to hear from you! Reach out to discuss your design needs or any questions you may have.
         </p>
       </div>
 
-      {/* Contact section */}
-
+      {/* Contact form section */}
       <form
         className="w-[min(100%,38rem)] mt-8 mx-auto font-Jost"
         onSubmit={handleSubmit(onSubmit)}
@@ -177,12 +180,15 @@ const Contact = () => {
         </button>
       </form>
 
-      {/* Ensure Confetti is displayed correctly */}
+      {/* Confetti effect */}
       {showConfetti && (
         <div className="fixed top-0 left-0 justify-center items-center w-full h-full z-50">
           <Confetti />
         </div>
       )}
+
+      {/* Toast Container for notifications */}
+      <ToastContainer />
     </section>
   );
 };
