@@ -4,7 +4,7 @@ import Image from 'next/image';
 import commercial from '@/app/public/images/commercial.jpg';
 import projectManagement from '@/app/public/images/projectManagement.jpg';
 import consultation from '@/app/public/images/consultation.jpg';
-import residential from '@/app/public/images/residential.jpg';
+import residential from '@/app/public/images/resident.jpg';
 import { motion, useInView } from 'framer-motion';
 
 const services = [
